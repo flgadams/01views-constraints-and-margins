@@ -4,7 +4,7 @@
 //
 //  Created by Glenn Adams on 7/30/22.
 // A Swift project template for UIKit apps, no storyboards
-// 3 horizontal stripes, but remove middle after 5 seconds 
+// 3 horizontal stripes, but remove middle after 5 seconds
 
 import UIKit
 
@@ -58,9 +58,9 @@ class RootViewController: UIViewController {
         NSLayoutConstraint.activate([c1,c3,c4].flatMap{$0})
         
         // top and bottom horizontal stripes
-        self.constraintsWith.append(contentsOf: c2)
+        self.constraintsWith.append(contentsOf: c2) // middle bar horiz
         // vertical 1,2, and 3
-        self.constraintsWith.append(contentsOf: c5with)
+        self.constraintsWith.append(contentsOf: c5with) // 3 horiz stripes vertially
         // activate 3 stripes
         NSLayoutConstraint.activate(self.constraintsWith)
         // vertical for 1 and 3 only
