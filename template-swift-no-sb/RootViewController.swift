@@ -70,8 +70,9 @@ class RootViewController: UIViewController {
             
             try await Task.sleep(nanoseconds: 5000000000)
             print("remove middle constraints ")
-            
+            //MUST REVMOVE MIDDLE VIEW FROM SUPERVIEW
             self.v2.removeFromSuperview()
+            // DEACTIVATE THE ALL3 CONTRACTS, ACTIVATE THE "ONLY 2" STRIPES
             NSLayoutConstraint.deactivate(self.constraintsWith)
             NSLayoutConstraint.activate(self.constraintsWithout)
 
