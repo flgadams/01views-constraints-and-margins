@@ -78,12 +78,10 @@ class RootViewController: UIViewController {
         }
         
         Task {
-            
             try await Task.sleep(nanoseconds: 10000000000)
             self.view.addSubview(v2 ) // add the middle stripe
             NSLayoutConstraint.deactivate(constraintsWithout)
             NSLayoutConstraint.activate(constraintsWith)
-            
         }
     }
 }
